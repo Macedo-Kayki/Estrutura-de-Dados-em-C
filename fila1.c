@@ -21,7 +21,7 @@ int desenfileirar(filavet *p){
     int aux;
     if (p -> F == TAM){
         printf("\nFila Vazia");
-        exit(0);
+        exit(1);
     }
     aux = p->vet[p->F];
     p->F++;
