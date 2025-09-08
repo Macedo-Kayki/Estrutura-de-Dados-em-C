@@ -42,13 +42,20 @@ int main(){
     fila.F = 0;
     fila.Q = 0;
     int valor;
+    int opc;
     
+    do{
     for(int i =0; i < TAM; i++){
         printf("Digite o valor a ser enfileirado: ");
         scanf("%d",&valor);
         enfileirar(valor,&fila);
     }
     for(int i = 0; i < TAM; i++){
-        printf("\n%d", desenfileirar(&fila));
+        printf("\nFileira %d: %d", i+1, desenfileirar(&fila));
     }
+    
+    printf("\n\nDeseja continuar no sistema? (0 = não | 1 = sim) ");
+    scanf("%d", &opc);
+    
+    }while(opc != 0);
 }
