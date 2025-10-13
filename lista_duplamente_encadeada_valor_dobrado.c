@@ -47,5 +47,8 @@ int main(){
     if (primeira != NULL){
         printf("\nLista Original:");
         escrevelista(primeira);
+    } else {
+        printf("\nLista Vazia");
     }
+    return 0;
 }
